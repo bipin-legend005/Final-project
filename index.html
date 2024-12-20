@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KFC Clone</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="KFC Clone Logo">
+        </div>
+        <nav class="nav-links">
+            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQX_xMLq4wycXwEFGgGPOHYLSoOYmXf2eMvyw&s" target="_blank">Menu</a>
+            <a href="https://www.istockphoto.com/deals" target="_blank">Deals</a>
+            <a href="order.html" class="btn-order">Order Now</a>
+        </nav>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Get Your Favorite Fried Chicken Delivered!</h1>
+            <p>Order now and enjoy exclusive deals and discounts.</p>
+            <button onclick="scrollToSection('menu')" class="btn-primary">Explore Menu</button>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <h2>Our Bestsellers</h2>
+        <div class="menu-categories">
+            <div class="category">
+                <img src="images/chicken-bucket.jpg" alt="Chicken Bucket">
+                <h3>Chicken Bucket</h3>
+                <button onclick="customizeOrder('Chicken Bucket')" class="btn-secondary">Order Now</button>
+            </div>
+            <div class="category">
+                <img src="images/burger.jpg" alt="Burger">
+                <h3>Zinger Burger</h3>
+                <button onclick="customizeOrder('Zinger Burger')" class="btn-secondary">Order Now</button>
+            </div>
+            <div class="category">
+                <img src="images/wings.jpg" alt="Chicken Wings">
+                <h3>Hot Wings</h3>
+                <button onclick="customizeOrder('Hot Wings')" class="btn-secondary">Order Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deals Section -->
+    <section id="deals" class="deals">
+        <h2>Exclusive Deals</h2>
+        <div class="deal-card">
+            <h3>Family Bucket</h3>
+            <p>Get 20% off on family buckets. Limited time only!</p>
+            <button onclick="openDeal('https://www.istockphoto.com/deals/family-bucket')" class="btn-primary">Learn More</button>
+        </div>
+        <div class="deal-card">
+            <h3>Combo Meal</h3>
+            <p>Enjoy a combo meal with fries and a drink for just $9.99.</p>
+            <button onclick="openDeal('https://www.istockphoto.com/deals/combo-meal')" class="btn-primary">Learn More</button>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <ul class="footer-links">
+                <li><a href="https://www.istockphoto.com/photo-menu" target="_blank">Menu</a></li>
+                <li><a href="https://www.istockphoto.com/deals" target="_blank">Deals</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            <p>© 2023 KFC Clone. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
